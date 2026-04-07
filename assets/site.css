@@ -1,23 +1,18 @@
 :root {
-  --bg: #091224;
-  --bg-accent: #102648;
-  --panel: rgba(11, 22, 41, 0.78);
-  --panel-strong: rgba(16, 31, 58, 0.92);
-  --panel-border: rgba(130, 167, 231, 0.18);
-  --text: #ecf3ff;
-  --muted: #a3b5d4;
-  --signal: #68b0ff;
-  --signal-strong: #2d7dd2;
-  --cream: #f4efe7;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --bg: #0b1528;
+  --bg-alt: #112342;
+  --panel: rgba(14, 27, 49, 0.9);
+  --line: rgba(124, 164, 225, 0.18);
+  --text: #f4f7fc;
+  --muted: #b7c4da;
+  --signal: #78b4ff;
+  --signal-strong: #2f7bd6;
+  --cream: #f5efe5;
+  --shadow: 0 22px 44px rgba(0, 0, 0, 0.28);
 }
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -26,9 +21,8 @@ body {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top right, rgba(45, 125, 210, 0.22), transparent 28%),
-    radial-gradient(circle at left center, rgba(104, 176, 255, 0.14), transparent 24%),
-    linear-gradient(180deg, #091224 0%, #0d1b33 45%, #091224 100%);
+    radial-gradient(circle at top right, rgba(120, 180, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 46%, var(--bg) 100%);
 }
 
 a {
@@ -36,19 +30,16 @@ a {
 }
 
 .page-shell {
-  width: min(1180px, calc(100% - 40px));
+  width: min(1120px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 24px 0 48px;
+  padding: 24px 0 44px;
 }
 
 .site-header,
 .site-footer,
 .hero,
-.content-section,
-.capability-grid,
-.contact-grid,
-.product-card {
-  animation: rise-in 600ms ease both;
+.content-section {
+  animation: rise-in 520ms ease both;
 }
 
 .site-header {
@@ -56,32 +47,30 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: min(28vw, 220px);
-  height: auto;
+  width: min(28vw, 200px);
   display: block;
 }
 
 .brand-text {
-  font-size: 0.95rem;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .site-nav {
   display: inline-flex;
-  align-items: center;
   gap: 18px;
   flex-wrap: wrap;
 }
@@ -89,36 +78,47 @@ a {
 .site-nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.96rem;
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.text-link:hover,
+.text-link:focus-visible {
   color: var(--cream);
-}
-
-.panel {
-  background: var(--panel);
-  border: 1px solid var(--panel-border);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(16px);
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.95fr);
-  gap: 28px;
-  padding: 36px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.95fr);
+  gap: 20px;
 }
 
-.eyebrow {
-  margin: 0 0 12px;
+.panel,
+.highlight-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.hero-copy,
+.highlight-card,
+.feature-card,
+.contact-card,
+.product-card {
+  padding: 28px;
+}
+
+.eyebrow,
+.contact-label {
+  display: block;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--signal);
-  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  font-size: 0.76rem;
   font-weight: 700;
+  color: var(--signal);
 }
 
 h1,
@@ -129,31 +129,29 @@ p {
 }
 
 h1 {
-  font-size: clamp(2.7rem, 5vw, 4.6rem);
-  line-height: 0.95;
-  margin-bottom: 18px;
-  max-width: 12ch;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 0.96;
+  margin-bottom: 16px;
+  max-width: 11ch;
 }
 
 h2 {
-  font-size: clamp(1.8rem, 3.5vw, 3rem);
-  line-height: 1.02;
-  margin-bottom: 14px;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  margin-bottom: 12px;
 }
 
 h3 {
-  font-size: 1.2rem;
-  margin-bottom: 12px;
+  font-size: 1.16rem;
+  margin-bottom: 10px;
 }
 
 .hero-text,
 .section-heading p,
-.capability-card p,
+.feature-card p,
 .product-copy p,
-.contact-card,
-.site-footer,
-.todo-note,
-.asset-note {
+.highlight-card p,
+.site-footer {
   color: var(--muted);
   line-height: 1.6;
 }
@@ -161,24 +159,22 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 28px;
+  gap: 12px;
+  margin-top: 22px;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
+  min-height: 46px;
   padding: 0 18px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
   transition:
     transform 140ms ease,
-    background-color 140ms ease,
-    color 140ms ease,
-    border-color 140ms ease;
+    opacity 140ms ease;
 }
 
 .button:hover,
@@ -188,92 +184,65 @@ h3 {
 
 .button-primary {
   background: var(--cream);
-  color: #102648;
+  color: #10233f;
 }
 
 .button-secondary {
-  background: transparent;
-  color: var(--text);
   border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text);
 }
 
-.hero-meta {
+.highlight-card {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
-.meta-card {
-  padding: 18px 20px;
-  border-radius: 20px;
-  background: var(--panel-strong);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.product-mini {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
 }
 
-.meta-label,
-.contact-label,
-.product-label {
+.product-mini-icon,
+.product-icon {
+  width: 100%;
+  max-width: 112px;
+  border-radius: 28px;
   display: block;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.74rem;
-  color: var(--signal);
+}
+
+.text-link {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .content-section {
-  margin-top: 56px;
+  margin-top: 52px;
 }
 
 .section-heading {
-  max-width: 760px;
-  margin-bottom: 24px;
+  max-width: 720px;
+  margin-bottom: 20px;
 }
 
-.capability-grid,
+.feature-grid,
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
-.capability-card,
-.contact-card {
-  padding: 24px;
+.contact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .product-card {
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
-  gap: 24px;
-  padding: 24px;
-}
-
-.product-icon {
-  width: 100%;
-  max-width: 140px;
-  border-radius: 32px;
-  display: block;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.product-points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 18px 0 24px;
-}
-
-.product-points span {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--text);
-  font-size: 0.92rem;
-}
-
-.asset-note,
-.todo-note {
-  margin-top: 16px;
+  gap: 22px;
+  align-items: center;
 }
 
 .contact-card a {
@@ -283,16 +252,16 @@ h3 {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  margin-top: 64px;
-  padding-top: 28px;
+  gap: 18px;
+  margin-top: 56px;
+  padding-top: 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @keyframes rise-in {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(14px);
   }
 
   to {
@@ -303,36 +272,40 @@ h3 {
 
 @media (max-width: 900px) {
   .site-header,
-  .site-footer {
+  .site-footer,
+  .hero,
+  .feature-grid,
+  .contact-grid,
+  .product-card {
+    grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .hero,
-  .product-card,
-  .capability-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .brand-logo {
+    width: min(56vw, 220px);
   }
 
-  .brand-logo {
-    width: min(58vw, 220px);
+  .product-mini {
+    grid-template-columns: 88px minmax(0, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .page-shell {
-    width: min(100% - 24px, 1180px);
+    width: min(100% - 20px, 1120px);
   }
 
-  .hero,
-  .capability-card,
+  .hero-copy,
+  .highlight-card,
+  .feature-card,
   .contact-card,
   .product-card {
     padding: 22px;
   }
 
-  .site-nav {
-    gap: 14px;
+  .product-mini,
+  .product-card {
+    grid-template-columns: 1fr;
   }
 }
