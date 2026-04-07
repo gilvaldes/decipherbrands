@@ -1,4 +1,6 @@
 FROM nginx:1.27-alpine
 
-COPY index.html /usr/share/nginx/html/index.html
-COPY assets/decipher-logo.png /usr/share/nginx/html/assets/decipher-logo.png
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY index.html /var/www/www/index.html
+COPY assets /var/www/www/assets
+COPY bellswellness /var/www/bellswellness
