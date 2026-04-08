@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Decipher Inc. is a software studio building focused digital products."
+      content="Decipher Inc. is a software studio and the public home for Decipher software products and support resources."
     />
     <title>Decipher Inc.</title>
     <link rel="stylesheet" href="/assets/site.css" />
@@ -13,42 +13,71 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <img class="brand-logo" src="/assets/decipher-logo.png" alt="Decipher Inc." />
+        <a class="brand" href="/" aria-label="Decipher Inc. home">
+          <img class="brand-logo" src="/assets/decipher-logo.png" alt="Decipher Inc." />
+        </a>
       </header>
 
       <main>
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
           <p class="eyebrow">Decipher Inc.</p>
-          <h1>Software products, built with clarity.</h1>
+          <h1 id="hero-title">Focused software products with a clear public home.</h1>
           <p class="hero-text">
-            Decipher Inc. develops focused software products and maintains their
-            public support resources on the decipherbrands.com domain.
+            Decipher Inc. is a software studio. This website is the public company
+            site for Decipher and links to the support, policy, and product
+            resources maintained for Decipher software.
           </p>
         </section>
 
-        <section class="product-strip" aria-labelledby="current-product">
-          <div class="product-strip-copy">
-            <p class="eyebrow">Current Product</p>
-            <h2 id="current-product">Bell's Wellness</h2>
-            <p>
-              Support, privacy, and legal information for the Bell's Wellness
-              app are available on its dedicated support site.
-            </p>
-            <a class="text-link" href="https://bellswellness.decipherbrands.com"
-              >Open Bell's Wellness support</a
-            >
-          </div>
+        <section class="overview-strip" aria-label="Company overview">
+          <article class="overview-item">
+            <span class="overview-label">Company</span>
+            <p>Decipher Inc. develops software products.</p>
+          </article>
 
+          <article class="overview-item">
+            <span class="overview-label">Public resources</span>
+            <p>Support, privacy, and legal information are kept accessible on company-owned domains.</p>
+          </article>
+
+          <article class="overview-item">
+            <span class="overview-label">Product structure</span>
+            <p>Each product has its own dedicated support page separate from the main company site.</p>
+          </article>
+        </section>
+
+        <section class="company-section" id="company">
+          <div class="section-heading">
+            <p class="eyebrow">Company</p>
+            <h2>Decipher maintains product information in dedicated public destinations.</h2>
+            <p>
+              The main company site stays focused on Decipher Inc., while each
+              software product can have its own support, policy, and contact
+              resources under the Decipher domain.
+            </p>
+          </div>
+        </section>
+
+        <section class="product-section" id="product" aria-labelledby="current-product">
           <img
-            class="product-strip-icon"
+            class="product-icon"
             src="/assets/bellswellness-app-icon.png"
             alt="Bell's Wellness app icon"
           />
+
+          <div class="product-content">
+            <p class="eyebrow">Current Product</p>
+            <h2 id="current-product">Bell's Wellness</h2>
+            <p>Support, privacy, and terms are available on the dedicated Bell's Wellness support site.</p>
+            <a class="text-link" href="https://bellswellness.decipherbrands.com">Visit support site</a>
+          </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <p>Decipher Inc.</p>
+        <p>Software products and public support resources on decipherbrands.com</p>
+        <p>Bell's Wellness support: <a href="mailto:bellswellness@decipherbrands.com">bellswellness@decipherbrands.com</a></p>
       </footer>
     </div>
   </body>
