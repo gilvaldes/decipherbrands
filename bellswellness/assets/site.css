@@ -218,7 +218,8 @@ h3 {
 .summary-grid,
 .info-grid,
 .docs-grid,
-.disclaimer-grid {
+.disclaimer-grid,
+.info-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -234,6 +235,17 @@ h3 {
 .doc-card {
   display: block;
   text-decoration: none;
+}
+
+.inline-link {
+  color: var(--teal-deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+  text-decoration: underline;
 }
 
 .legal-layout {
@@ -311,7 +323,8 @@ h3 {
   .summary-grid,
   .info-grid,
   .docs-grid,
-  .disclaimer-grid {
+  .disclaimer-grid,
+  .info-columns {
     grid-template-columns: 1fr;
   }
 }
