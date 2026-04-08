@@ -48,7 +48,7 @@ a {
 }
 
 .site-header {
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 .brand {
@@ -62,11 +62,11 @@ a {
 }
 
 .hero {
-  min-height: calc(100dvh - 280px);
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 36px 0 20px;
+  justify-content: flex-start;
+  padding: 12px 0 10px;
 }
 
 .eyebrow {
@@ -119,7 +119,7 @@ h2 {
 }
 
 .company-note {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   padding: 24px;
 }
 
@@ -163,10 +163,7 @@ h2 {
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
+  display: block;
   margin-top: 34px;
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -191,17 +188,11 @@ h2 {
   }
 
   .hero {
-    min-height: auto;
-    padding: 24px 0 44px;
+    padding: 12px 0 14px;
   }
 
   .brand-logo {
     width: min(58vw, 240px);
-  }
-
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .product-icon {
