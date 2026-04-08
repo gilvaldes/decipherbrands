@@ -36,7 +36,7 @@ a {
 .page-shell {
   width: min(980px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 28px 0 44px;
+  padding: 20px 0 44px;
 }
 
 .site-header,
@@ -48,7 +48,7 @@ a {
 }
 
 .site-header {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 .brand {
@@ -66,7 +66,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 12px 0 10px;
+  padding: 0 0 2px;
 }
 
 .eyebrow {
@@ -108,6 +108,7 @@ h2 {
 .hero-text {
   max-width: 42rem;
   font-size: 1.08rem;
+  margin-bottom: 0;
 }
 
 .company-note,
@@ -119,7 +120,7 @@ h2 {
 }
 
 .company-note {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   padding: 24px;
 }
 
@@ -188,7 +189,7 @@ h2 {
   }
 
   .hero {
-    padding: 12px 0 14px;
+    padding: 0 0 4px;
   }
 
   .brand-logo {
