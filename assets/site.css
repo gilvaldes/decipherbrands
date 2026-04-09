@@ -118,6 +118,11 @@ h2 {
   margin-bottom: 0;
 }
 
+.company-note-text {
+  max-width: none;
+  font-size: 0.95rem;
+}
+
 .company-note,
 .product-section {
   border: 1px solid var(--line);
