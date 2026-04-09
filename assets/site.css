@@ -102,6 +102,7 @@ h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   line-height: 1.04;
   margin-bottom: 12px;
+  text-wrap: balance;
 }
 
 .hero-text,
