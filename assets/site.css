@@ -36,7 +36,7 @@ a {
 .page-shell {
   width: min(980px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 18px 0 44px;
+  padding: 24px 0 44px;
 }
 
 .site-header,
@@ -48,7 +48,7 @@ a {
 }
 
 .site-header {
-  margin-bottom: 10px;
+  margin-bottom: 48px;
 }
 
 .brand {
@@ -64,7 +64,7 @@ a {
 .page-shell main {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 48px;
 }
 
 .hero {
@@ -128,10 +128,6 @@ h2 {
 .company-note {
   margin: 0;
   padding: 20px 24px;
-}
-
-.product-section {
-  border-top: 1px solid var(--line);
 }
 
 .product-section {
