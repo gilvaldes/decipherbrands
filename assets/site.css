@@ -36,7 +36,7 @@ a {
 .page-shell {
   width: min(980px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 24px 0 44px;
+  padding: 18px 0 44px;
 }
 
 .site-header,
@@ -48,7 +48,7 @@ a {
 }
 
 .site-header {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .brand {
@@ -61,12 +61,18 @@ a {
   display: block;
 }
 
+.page-shell main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .hero {
   min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 6px 0 8px;
+  padding: 0;
 }
 
 .eyebrow {
@@ -88,7 +94,7 @@ ul {
 h1 {
   font-size: clamp(3.2rem, 7vw, 6rem);
   line-height: 0.93;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   max-width: 11ch;
 }
 
@@ -120,12 +126,11 @@ h2 {
 }
 
 .company-note {
-  margin-bottom: 12px;
-  padding: 24px;
+  margin: 0;
+  padding: 20px 24px;
 }
 
 .product-section {
-  padding-top: 34px;
   border-top: 1px solid var(--line);
 }
 
@@ -134,7 +139,7 @@ h2 {
   grid-template-columns: 120px minmax(0, 1fr);
   gap: 24px;
   align-items: center;
-  padding: 24px;
+  padding: 20px 24px;
 }
 
 .product-icon {
@@ -189,7 +194,7 @@ h2 {
   }
 
   .hero {
-    padding: 6px 0 10px;
+    padding: 0;
   }
 
   .brand-logo {
